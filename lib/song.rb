@@ -66,7 +66,7 @@ class Song
     song = self.new
     song.name = array[1]
     song.artist_name = array[0]
-    @@all << self
+    self.all << self
     song
   end
 
