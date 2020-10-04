@@ -61,11 +61,7 @@ class Song
 
 #in progress
   def self.create_from_filename(filename)
-    array = filename.split(" - ")
-    array[1].slice! ".mp3"
-    song = self.new
-    song.name = array[1]
-    song.artist_name = array[0]
+    self.class.new_from_filename(filename)
     @@all << self
     #@all
   end
