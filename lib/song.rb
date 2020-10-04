@@ -63,7 +63,7 @@ class Song
   def self.create_from_filename(filename)
     self.class.new_from_filename(filename)
     @@all << self
-    #@all
+    @@all
   end
 
   def self.destroy_all
