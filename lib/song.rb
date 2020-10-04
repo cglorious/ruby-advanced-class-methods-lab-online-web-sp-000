@@ -66,8 +66,8 @@ class Song
     song = self.new
     song.name = array[1]
     song.artist_name = array[0]
-    self.all << self
-    self.all
+    @@all << self
+    @all
   end
 
   def self.destroy_all
