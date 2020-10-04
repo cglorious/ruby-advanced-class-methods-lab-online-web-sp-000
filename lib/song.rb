@@ -50,7 +50,6 @@ class Song
     alpha_array
   end
 
-#in progress
   def self.new_from_filename(filename)
     array = filename.split(" - ")
     array[1].slice! ".mp3"
@@ -67,7 +66,7 @@ class Song
     song = self.new
     song.name = array[1]
     song.artist_name = array[0]
-    self.save
+    self.class.all << self
     song
   end
 
