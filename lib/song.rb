@@ -64,8 +64,8 @@ class Song
     array = filename.split(" - ")
     array[1].slice! ".mp3"
     song = self.new
-    song.name = array[1]
-    song.artist_name = array[0]
+    #song.name = array[1]
+    #song.artist_name = array[0]
     self.all << self
     song
   end
